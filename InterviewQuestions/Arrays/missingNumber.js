@@ -1,8 +1,8 @@
 // Find the missing number in a given integer array of 1 to 100
 // ** ?? Does this sequence start at 0 or 1? // end at 99 or 100?
 
-let array = [6] // array named array
-let count = 100 // count is the ending integer we assigned
+let array = [6] // declare the array
+let count = 100 // count is the assigned ending integer in array
 let missing = new Array() // missing is the new array the numbers missing will be pushed to
 
 for (let i = 1; i <= count; i++) {
@@ -10,7 +10,7 @@ for (let i = 1; i <= count; i++) {
   if (array.indexOf(i) === -1) {
     // indexOf will return each element that is not present in array
     missing.push(i)
-    // push method adds new items to the end of the new array called missing
+    // push method adds missing items to the new array called missing
   }
 }
 
